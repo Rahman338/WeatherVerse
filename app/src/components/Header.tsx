@@ -1,8 +1,24 @@
 function Header() {
     return (
-      <header>
-        <h1>🌦️ WeatherVerse</h1>
-        <p>India's Interactive Weather Experience</p>
+      <header className="header">
+  
+        <div className="logo">
+          🌦️ <span>WeatherVerse</span>
+        </div>
+  
+        <input
+          type="text"
+          placeholder="Search city or state..."
+        />
+  
+        <div className="actions">
+  
+          <button>🌙</button>
+  
+          <button>⚙️</button>
+  
+        </div>
+  
       </header>
     );
   }
