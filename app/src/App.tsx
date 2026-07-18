@@ -14,13 +14,17 @@ function App() {
 
       <main>
 
-        <WeatherCard />
+        <div className="dashboard">
 
-        <HourlyForecast />
+          <WeatherCard />
 
-        <WeeklyForecast />
+          <HourlyForecast />
 
-        <IndiaMap />
+          <WeeklyForecast />
+
+          <IndiaMap />
+
+</div>
 
       </main>
 

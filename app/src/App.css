@@ -128,3 +128,37 @@ body{
   color:#666;
 
 }
+
+.dashboard{
+
+  display:grid;
+
+  grid-template-columns:350px 1fr;
+
+  gap:25px;
+
+}
+
+.weather-card{
+
+  grid-column:1;
+
+}
+
+.forecast-box:first-of-type{
+
+  grid-column:2;
+
+}
+
+.forecast-box:last-of-type{
+
+  grid-column:1 / span 2;
+
+}
+
+.map-box{
+
+  grid-column:1 / span 2;
+
+}
