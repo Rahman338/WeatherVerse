@@ -1,15 +1,31 @@
+import "./App.css";
+
 import Header from "./components/Header";
-import Navigation from "./components/Navigation";
+import WeatherCard from "./components/WeatherCard";
+import HourlyForecast from "./components/HourlyForecast";
+import WeeklyForecast from "./components/WeeklyForecast";
+import IndiaMap from "./components/IndiaMap";
 import Footer from "./components/Footer";
-import HomePage from "./pages/HomePage";
 
 function App() {
   return (
     <>
       <Header />
-      <Navigation />
-      <HomePage />
+
+      <main>
+
+        <WeatherCard />
+
+        <HourlyForecast />
+
+        <WeeklyForecast />
+
+        <IndiaMap />
+
+      </main>
+
       <Footer />
+
     </>
   );
 }

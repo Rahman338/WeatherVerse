@@ -83,4 +83,48 @@ body{
 
   background:#e7e7e7;
 
+}main{
+
+  max-width:1200px;
+
+  margin:40px auto;
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:30px;
+
+}
+
+.weather-card,
+.forecast-box,
+.map-box{
+
+  background:white;
+
+  padding:30px;
+
+  border-radius:20px;
+
+  box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+.weather-card{
+
+  text-align:center;
+
+}
+
+.footer{
+
+  margin-top:40px;
+
+  text-align:center;
+
+  padding:25px;
+
+  color:#666;
+
 }
