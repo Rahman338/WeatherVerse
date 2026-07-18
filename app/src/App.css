@@ -162,3 +162,78 @@ body{
   grid-column:1 / span 2;
 
 }
+
+.weather-top{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:25px;
+
+  margin-bottom:25px;
+
+}
+
+.weather-icon{
+
+  font-size:70px;
+
+}
+
+.weather-top h1{
+
+  font-size:60px;
+
+  margin:0;
+
+}
+
+.weather-top h3{
+
+  color:#555;
+
+  margin-top:10px;
+
+}
+
+.weather-details{
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:12px;
+
+  margin-top:20px;
+
+}
+
+.detail{
+
+  display:flex;
+
+  justify-content:space-between;
+
+  background:#f7f8fb;
+
+  padding:12px;
+
+  border-radius:10px;
+
+}
+
+.sun-times{
+
+  display:flex;
+
+  justify-content:space-between;
+
+  margin-top:25px;
+
+  font-size:14px;
+
+  color:#555;
+
+}
+
