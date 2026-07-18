@@ -237,3 +237,46 @@ body{
 
 }
 
+.hourly-card {
+  background: white;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+.hourly-scroll {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  scroll-behavior:smooth;
+}
+
+.hour-item {
+  min-width: 80px;
+  text-align: center;
+  background: #f6f8fc;
+  border-radius: 16px;
+  padding: 18px;
+  flex-shrink: 0;
+}
+
+.hour-item span {
+  display: block;
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.hour-item strong {
+  font-size: 20px;
+}
+
+.active-hour{
+  background:#3b82f6;
+  color:white;
+
+  transform:scale(1.06);
+
+  box-shadow:0 12px 30px rgba(59,130,246,.35);
+}
