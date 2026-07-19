@@ -1,4 +1,22 @@
-function WeatherCard() {
+
+import { useWeather } from "../hooks/useWeather";
+interface WeatherCardProps {
+  city: string;
+}
+
+function WeatherCard({ city }: WeatherCardProps) {
+  const { weather, loading, error } = useWeather(city);
+  if (loading) {
+    return <section className="weather-card">Loading weather...</section>;
+  }
+  
+  if (error) {
+    return <section className="weather-card">{error}</section>;
+  }
+  
+  if (!weather) {
+    return null;
+  }
     return (
       <section className="weather-card">
   
@@ -10,11 +28,11 @@ function WeatherCard() {
   
           <div>
   
-            <h1>31°C</h1>
+          <h1>{Math.round(weather.main.temp)}°C</h1>
   
-            <h3>Partly Cloudy</h3>
+          <h3>{weather.weather[0].main}</h3>
   
-            <p>📍 New Delhi, India</p>
+          <p>📍 {weather.name}</p>
   
           </div>
   
@@ -24,17 +42,17 @@ function WeatherCard() {
   
           <div className="detail">
             <span>💧 Humidity</span>
-            <strong>68%</strong>
+            <strong>{weather.main.humidity}%</strong>
           </div>
   
           <div className="detail">
             <span>🌬 Wind</span>
-            <strong>12 km/h</strong>
+            <strong>{weather.wind.speed} km/h</strong>
           </div>
   
           <div className="detail">
             <span>🌡 Feels Like</span>
-            <strong>34°C</strong>
+            <strong>{Math.round(weather.main.feels_like)}°C</strong>
           </div>
   
         </div>

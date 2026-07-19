@@ -394,3 +394,19 @@ body{
     font-weight:600;
     
     }
+
+
+    .india-map-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 520px;
+      padding: 20px;
+    }
+    
+    .india-map {
+      width:70%;
+    max-width:450px;
+    height:auto;
+    object-fit:contain;
+    }
